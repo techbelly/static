@@ -434,7 +434,7 @@ ul.helpers li.offline_steps {
 */
 
 #wrapper.programme .programme-progression {
-  padding: 0 2.5em 0 0;
+  padding: 0 2em 0 0;
   position: relative;
 }
 
@@ -461,11 +461,14 @@ ul.helpers li.offline_steps {
 
 #wrapper.programme .programme-progression li a {
   background-color: #E1E8E8;
+  background-image: url(../images/section-divider-arrow.png);
+  background-position: 94% 50%;
+  background-repeat: no-repeat;
 	display: block;
   height: 2.25em;
   line-height: 2.25em;
   margin-left: 1px;
-	padding: 0 0.75em 0 0.75em;
+	padding: 0 1.75em 0 0.75em;
 	position: relative;
 	text-align: center;
   top: 0;
@@ -501,28 +504,6 @@ ul.helpers li.offline_steps {
 #wrapper.programme div.further-information.active a:hover {
   background-color: #fff;
 	color: #2E8ACA;
-}
-
-#wrapper.programme .progressor {
-/*  background: url(/images/programme-progressor-arrows.png) no-repeat 0 0;*/
-	height: 36px;
-	position: absolute;
-	top: 0;
-	z-index: 1;
-}
-
-#wrapper.programme li.active a .progressor,
-#wrapper.programme li.active a:hover .progressor {
-  background-position: -283px 0;
-}
-
-#wrapper.programme li a:hover .progressor {
-	background-position: -573px 0;
-}
-
-#wrapper.programme .programme-progression li:last-child .progressor {
-
-	display: none;
 }
 
 div.further-information {
@@ -589,6 +570,9 @@ div.further-information.active a {
 
 #wrapper.programme .part-pagination li:first-child a {
   background-color: #E1E8E8;
+  background-image: url(../images/section-divider-arrow.png);
+  background-position: 94% 50%;
+  background-repeat: no-repeat;
   border-bottom: solid 1px #C9D0D0;
 /*  border-top: none;
   border-right: none;
@@ -598,7 +582,7 @@ div.further-information.active a {
   border-radius: 0.5em 0 0 0.5em;*/
 	display: block;
 	margin-right: 3em;
-	padding: 0 1em;
+	padding: 0 1.75em 0 0.5em;
 }
 
 #wrapper.programme .part-pagination a:hover .progressor {
