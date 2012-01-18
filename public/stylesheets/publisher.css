@@ -107,7 +107,7 @@ aside .chapters-navigation li a {
   background-color: #E1E8E8;
   border-top: solid 1px #C9D0D0;
 	display: block;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	padding: 0.75em 0.75em;
 	text-decoration: none;
 }
@@ -131,10 +131,13 @@ aside .chapters-navigation li.active a:hover {
 	background: #fff;
 	color: #1576FB;
 }
+aside .chapters-navigation li a span {
+  display: block;
+}
 aside .chapters-navigation li a .part-label {
 	color: #3f3f3f;
 	display: block;
-	font-size: 0.6em;
+	font-size: 0.75em;
 	line-height: 1.5em;
 	text-transform: uppercase;
 }
@@ -143,6 +146,9 @@ aside .chapters-navigation li a:hover .part-label {
 }
 aside .chapters-navigation li.active a:hover .part-label {
 	color: #1576FB;
+}
+aside .chapters-navigation li a .part-title {
+	line-height: 1.3em;
 }
 aside .chapters-navigation li.active a .part-title {
 	color: #000;
