@@ -93,6 +93,7 @@
 aside .chapters-navigation {
 	display: block;
 	float: right;
+	margin-top: 2em;
 	width: 95%;
 }
 aside .chapters-navigation ol {
