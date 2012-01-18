@@ -69,6 +69,8 @@
 }
 
 #wrapper.guide article {
+  border-left: solid 1px #C9D0D0;
+  margin-left: -1px;
   min-height: 40em;
 	width: 75%;
 }
@@ -91,7 +93,6 @@
 aside .chapters-navigation {
 	display: block;
 	float: right;
-	margin-top: 1em;
 	width: 95%;
 }
 aside .chapters-navigation ol {
@@ -103,15 +104,22 @@ aside .chapters-navigation li {
 	list-style: none;
 }
 aside .chapters-navigation li a {
+  background-color: #E1E8E8;
+  border-top: solid 1px #C9D0D0;
 	display: block;
 	font-size: 1.3em;
 	padding: 0.75em 0.75em;
 	text-decoration: none;
 }
+aside .chapters-navigation li:first-child a {
+  border-top: none;
+}
 aside .chapters-navigation li.active a {
 	background: #fff;
-	border-right: none;
+  border: solid 1px #C9D0D0;
+  border-right: none;
 	display: block;
+	margin-bottom: -1px;
 	position: relative;
 	z-index: 2;
 }
@@ -136,8 +144,8 @@ aside .chapters-navigation li a:hover .part-label {
 aside .chapters-navigation li.active a:hover .part-label {
 	color: #1576FB;
 }
-aside .chapters-navigation li a .part-title {
-	text-decoration: underline;
+aside .chapters-navigation li.active a .part-title {
+	color: #000;
 }
 
 #wrapper.video-guide article {
@@ -193,7 +201,7 @@ aside .chapters-navigation li a .part-title {
 /* guides pagination */
 
 .pagination {
-  background: #C9D0D0;
+  background: #E1E8E8;
 	display: block;
   margin: 2em -1.5em 0 -1.5em;
 }
