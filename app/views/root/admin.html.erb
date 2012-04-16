@@ -5,12 +5,23 @@
     <meta charset="utf-8" />
     <title>GOV.UK Admin</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE6">
-    <%= stylesheet_link_tag "normalize" %>
-    <%= stylesheet_link_tag "admin/jquery-ui-1.8.14.css" %>
-    <%= stylesheet_link_tag "core-admin" %>
+    <%= stylesheet_link_tag '/stylesheets/_publisher/bootstrap.min.css', '/stylesheets/_publisher/bootstrap-responsive.min.css' %>
 
-    <%= javascript_include_tag "libs/jquery/jquery-1.7.2.min.js" %>
-    <%= javascript_include_tag "libs/jquery/jquery-ui-1.8.16.custom.min.js" %>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-26179049-3']);
@@ -28,31 +39,23 @@
   </head>
   <body>
     <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-		<header class="gds-header" role="banner">
-		  <div class="wrapper">
 
-				<hgroup>
-				  <h1>gov.uk admin</h1>
-				  <h2>Placeholder</h2>
-			  </hgroup>
+    <div id="wrapper">
 
-				  <nav class="gds-menu" role="navigation">
-    				<form>
-  				    <label for="applications" title="Applications" class="visuallyhidden">Navigate to internal applications</label>
-      				  <select name="applications">
-      				    <option value="" disabled="disabled" title="Select application">Select application</option>
-      				    <option value="<%= Plek.current.find('publisher') %>/admin" title="launch Publisher">Publisher</option>
-                  <option value="<%= Plek.current.find('arbiter') %>/artefacts" title="launch Panopticon">Panopticon</option>
-      				    <option value="<%= Plek.current.find('data') %>/admin" title="launch Imminence">Imminence</option>
-      				    <option value="<%= Plek.current.find('needs') %>/" title="launch Need-o-tron">Need-o-tron</option>
-      				    <option value="http://team.alpha.gov.uk/" title="launch Gov.uk team wiki">Team Wiki</option>
-      			    </select>
-            </form>
-  			  </nav>
-			</div>
-		</header><!-- gds-header -->
-		<div id="wrapper">
+    </div>
 
-		</div>
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <%= javascript_include_tag(
+      '/javascripts/_publisher/bootstrap.min.js'
+    ) %>
+
+    <script type="text/javascript">
+      $('.icon-question-sign').popover()
+    </script>
+
   </body>
 </html>
